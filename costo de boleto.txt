@@ -1,0 +1,28 @@
+// Example program
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main()
+{
+   float precio,dias,distancia;
+
+    cout << "Ingresa tu distancia recorrida en kilomentros: ";
+    cin >> distancia;
+
+    cout << "Ingresa tus dias de viaje: ";
+    cin >> dias;
+
+      if(dias >= 7 && distancia >=800)
+        {
+          precio = ((distancia * 0.17) - (distancia * 0.17 * 0.3));
+        }
+        else
+        {
+          precio = distancia * 0.17;
+        }
+
+      cout << "El precio de tu boleto es de: $" << precio;
+
+    return 0;
+}
